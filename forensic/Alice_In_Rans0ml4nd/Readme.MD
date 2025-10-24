@@ -23,7 +23,7 @@
       </details>
 * **solve-material/** : folder containing solution material, browse with spoiler alert !
 
-*Note : while this challenge was classified as 'Easy', I would argue it is more 'Medium' or even 'Hard' due to the diverse skills required to solve it (PCAP analysis, email analysis, password cracking, PowerShell deobfuscation, cryptography).*
+*Note : while this challenge was classified as 'Easy', I would argue it is more 'Medium' or even 'Hard' due to the diverse skills required to solve it.*
 
 <details>
 <summary>Solution</summary>
@@ -283,7 +283,7 @@ As they will be mentioned along this WU, here is a quick list of them :
 * Let's grab them easly with some greps :
   * file0
     ```bash
-    grep -a -n "yinxuqab.ru" chall.pcapng | strings | grep file | sort -u
+    $ grep -a -n "yinxuqab.ru" chall.pcapng | strings | grep file | sort -u
     0file0-0-d2373cdd6d999679668b0d4587abbeb325bda034
     0file0-1-3841f3cdb1e4ec8f7b597f75ddde462a9bbefb82
     0file0-2-8318f3bc16af0f52dce3ffbfa34670557bf89ee9
@@ -295,7 +295,7 @@ As they will be mentioned along this WU, here is a quick list of them :
         `d2373cdd6d999679668b0d4587abbeb325bda0343841f3cdb1e4ec8f7b597f75ddde462a9bbefb828318f3bc16af0f52dce3ffbfa34670557bf89ee98ce45da82eb45abd320c4b0a143e2569a6bd8a8f8d7c0e52a76ff4b4505e82df2c204632`
   * id0
     ```bash
-    grep -a -n "yinxuqab.ru" chall.pcapng | strings | grep id | sort -u
+    $ grep -a -n "yinxuqab.ru" chall.pcapng | strings | grep id | sort -u
     id-0-235350582d3330343142
     id-complete
     ```
@@ -304,7 +304,7 @@ As they will be mentioned along this WU, here is a quick list of them :
     * Just the victim ID (seen in ransom note)
   * key0
     ```bash
-    grep -a -n "yinxuqab.ru" chall.pcapng | strings | grep key | sort -u
+    $ grep -a -n "yinxuqab.ru" chall.pcapng | strings | grep key | sort -u
     key-0-3de090e7059fb1d7f77dec50078405c855e3f1a4
     key-1-6589e72db2602c7d7e8403b8
     key-complete
